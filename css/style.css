@@ -1,0 +1,75 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --Very-light-gray: #EEEEEE;
+  --dark-gray:  #888888;
+  --Slightly-desaturated-blue: #81b3d2;
+  --Mostly-desaturated-dark-orange: #766357;
+}
+body {
+	font-size: 21px;
+	font-family: PT Sans;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*
+img {max-width: 100%;
+	height: auto;}
+*/
+/*
+.main-header{}
+.site-navigation {}
+*/
+.site-navigation {
+	font-size:14px;
+	line-height:26px;
+	list-style: none;}
+
+/*features*/
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+/*appointment*/
+
+.appointment{
+	font-size:21px;
+}
+
+.appointment-info {
+	font-size: 14px;
+}
+
+/*footer*/
+
+.main-footer {
+  color: var(--basic-white);
+ }
+
+ .footer-contacts a {
+  color: var(--basic-black);
+  text-decoration: underline;
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 14px;
+}
+
+.social-button {
+	background: var(--basic-white);
+}
