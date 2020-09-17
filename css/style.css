@@ -1,14 +1,15 @@
 :root {
   --basic-black: #000000;
   --basic-white: #FFFFFF;
-  --Very-light-gray: #EEEEEE;
+  --very-light-gray: #EEEEEE;
   --dark-gray:  #888888;
-  --Slightly-desaturated-blue: #81b3d2;
-  --Mostly-desaturated-dark-orange: #766357;
+  --slightly-desaturated-blue: #81b3d2;
+  --mostly-desaturated-dark-orange: #766357;
 }
 body {
 	font-size: 21px;
-	font-family: PT Sans;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-style: normal;
 }
 
 a {
@@ -26,38 +27,91 @@ img {max-width: 100%;
 .site-navigation {
 	font-size:14px;
 	line-height:26px;
-	list-style: none;}
+	list-style: none;
+}
+.site-navigation ul {
+	list-style: none;
+}
+.description {
+	font-size: 21px;
+	line-height: 26px;
+}
+.description-title {
+	background: var(--basic-white);
+	font-size: 14px;
+}
+/*facilities*/
+
+.facilities-title{
+	background: var(--slightly-desaturated-blue);
+	color: var(--basic-white);
+	font-size: 14px;
+}
+
+.features-list {
+  background: var(--basic-white);
+}
+
+.facilities-item{
+	font-size: 14px;
+	line-height: 21px;
+	list-style: none;
+}
 
 /*features*/
 
+.features-title{
+	background: var(--slightly-desaturated-blue);
+	color: var(--basic-white);
+	font-size: 14px;
+}
+
 .features-list {
-  list-style: none;
+  background: var(--very-light-gray);
 }
 
 .feature-item {
-  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  list-style: none;
+}
+
+.feature-item h3 {
+	font-size: 14px;
+	line-height: 21px;
 }
 
 /*appointment*/
 
-.appointment{
-	font-size:21px;
+.appointment p {
+	font-size: 21px;
+	line-height: 26px;
 }
 
-.appointment-info {
-	font-size: 14px;
+.appointment {
+	font-size: 30px;
+	line-height: 24px;
 }
 
 /*footer*/
 
 .main-footer {
   color: var(--basic-white);
- }
+  background: rgba(255, 255, 255, 0.9);
+}
 
  .footer-contacts a {
   color: var(--basic-black);
   text-decoration: underline;
+  font-size: 21px;
+  line-height: 26px;
 }
+
+.footer-phone {
+	font-size: 21px;
+	line-height: 26px;
+}
+
 .footer-social {
   text-align: center;
 }
@@ -66,10 +120,6 @@ img {max-width: 100%;
   list-style: none;
 }
 
-.footer-social h2 {
-  font-size: 14px;
-}
-
 .social-button {
-	background: var(--basic-white);
+	background: var(--slightly-desaturated-blue);
 }
