@@ -1,20 +1,65 @@
 :root {
-  --basic-black: #000000;
-  --basic-white: #FFFFFF;
+  --black: #000000;
+  --white: #FFFFFF;
   --very-light-gray: #EEEEEE;
+  --light-gray: #F2F2F2;
   --dark-gray:  #888888;
   --slightly-desaturated-blue: #81b3d2;
   --mostly-desaturated-dark-orange: #766357;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: local('PT Sans'), local('PTSans-Regular'),
+        url('../fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../fonts/PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: local('PT Sans Bold'), local('PTSans-Bold'),
+        url('../fonts/PTSans-Bold.woff2') format('woff2'),
+        url('../fonts/PTSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
-	font-size: 21px;
+  margin: 0
+	font-size: 14px;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-style: normal;
+  background-color: var(--light-gray);
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
 	text-decoration: none;
 }
+
+.container {
+  width: 1200px;
+  background-color: var(--white);
+}
+
+
 
 /*
 img {max-width: 100%;
