@@ -14,7 +14,7 @@
   		<nav class="main-navigation">
         <img src="https://via.placeholder.com/" width="368" height="153" alt="Логотип проект Седона">
      		<ul class="site-navigation">
-  				<li><a href="">Информация</a></li>
+  				<li><a class="active" href="">Информация</a></li>
   				<li><a href="">Фото и видео</a></li>
   				<li><a href="">Карта штата</a></li>
   				<li><a href="hotels.html">Гостиницы</a></li>
@@ -24,10 +24,10 @@
 
     <main class="main">
       <section class="jumbotron">
-        <img src="/img/jumbotron/welcome.svg" alt="Welcome">
+        <!-- <img src="/img/jumbotron/welcome.svg" alt="Welcome">
         <img src="/img/jumbotron/gorgeous.svg" alt="to the gorgeous">
         <img src="/img/jumbotron/sedona.svg" alt="Sedona">
-        <img src="/img/jumbotron/grand-canyon.svg" alt="Because the Grand Canyon sucks!">
+        <img src="/img/jumbotron/grand-canyon.svg" alt="Because the Grand Canyon sucks!"> -->
       </section>
 
       <section class="description">
@@ -97,13 +97,13 @@
       <section class="booking">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button>Поиск гостиницы в Седоне</button>
+        <button class="button button_brown button_big">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="map">
         <div class="booking-widget">
           <div class="form-group">
-            <h4>Дата заезда</h4>
+            <h4>Дата заезда:</h4>
             <div class="field">
               <input type="text" name="" id="">
               <img src="" alt="Календарь">
@@ -111,7 +111,7 @@
           </div>
 
           <div class="form-group">
-            <h4>Дата выезда</h4>
+            <h4>Дата выезда:</h4>
             <div class="field">
               <input type="text" name="" id="">
               <img src="" alt="Календарь">
@@ -121,22 +121,22 @@
           <div class="form-group">
             <h4>Взрослые:</h4>
             <div class="field">
-              <button>-</button>
+              <button class="button-number">-</button>
               <input type="text" name="" id="">
-              <button>+</button>
+              <button class="button-number">+</button>
             </div>
           </div>
 
           <div class="form-group">
             <h4>Дети:</h4>
             <div class="field">
-              <button>-</button>
+              <button class="button-number">-</button>
               <input type="text" name="" id="">
-              <button>+</button>
+              <button class="button-number">+</button>
             </div>
           </div>
 
-          <button class="button-blue">
+          <button class="button button_blue button_medium">
             Найти
           </button>
         </div>
@@ -151,9 +151,9 @@
       </section>
 
       <section class="footer-social">
-        <a class="social-button" href="#">Твиттер</a>
-        <a class="social-button" href="#">Фейсбук</a>
-        <a class="social-button" href="#">Ютуб</a>
+        <a class="button button_blue" href="#">Твиттер</a>
+        <a class="button button_blue" href="#">Фейсбук</a>
+        <a class="button button_blue" href="#">Ютуб</a>
       </section>
 
       <p class="footer-copyright">
@@ -163,6 +163,6 @@
       </p>
     </footer>
   </div>
-  
+
 </body>
 </html>
