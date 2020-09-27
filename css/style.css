@@ -62,6 +62,7 @@ body {
 	font-size: 14px;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-style: normal;
+  text-transform: uppercase;
   color: var(--black);
   background-color: var(--gray-7);
 }
@@ -84,25 +85,6 @@ a:active {
 
 }
 
-li {
-   list-style: none;
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-h3 {
-  font-weight: bold;
-  font-size: 21px;
-}
-
-h4 {
-  line-height: 26px;
-  font-weight: bold;
-}
-
 .container {
   width: 1200px;
   background-color: var(--white);
@@ -116,6 +98,10 @@ h4 {
 .site-navigation a {
   font-weight: bold;
   line-height: 26px;
+}
+
+.site-navigation li {
+   list-style: none;
 }
 
 .site-navigation a.active{
@@ -143,6 +129,10 @@ h4 {
 .advantages {
   line-height: 21px;
 }
+.advantages h3 {
+  font-weight: bold;
+  font-size: 21px;
+}
 
 .advantage p {
   color: var(--gray-1);
@@ -165,6 +155,11 @@ h4 {
 
 .booking {
   line-height: 24px;
+}
+
+.booking h2 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .booking p {
@@ -248,6 +243,11 @@ h4 {
 
 .form-group {}
 
+.form-group h4 {
+    line-height: 26px;
+    font-weight: bold;
+}
+
 .field input {
   background-color: var(--gray-7);
   font-weight: bold;
@@ -255,6 +255,7 @@ h4 {
   padding: 4px 10px;
   height: 38px;
   border: 2px solid var(--gray-7);
+  text-transform: uppercase;
 }
 .field input:hover {
   background-color: var(--gray-6);
