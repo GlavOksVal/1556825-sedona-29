@@ -117,20 +117,21 @@ a:active {
 
 /* HEADER */
 
-.main-header {}
+.header {}
 
-.main-navigation {}
+.header__navigation {}
 
-.site-navigation a {
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__link {
   font-weight: bold;
   line-height: 26px;
 }
 
-.site-navigation li {
-   list-style: none;
-}
-
-.site-navigation a.active{
+.menu__link_active {
   color: var(--brown-3);
 }
 
@@ -143,13 +144,13 @@ a:active {
 
 .description {}
 
-.description-title {
+.description__title {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
-.description-subtitle {
+.description__subtitle {
   line-height: 26px;
   color: var(--gray-1);
 }
@@ -186,7 +187,7 @@ a:active {
   line-height: 24px;
 }
 
-.booking p {
+.booking__description {
   color: var(--gray-1);
 }
 
