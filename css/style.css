@@ -102,12 +102,11 @@ a {
 }
 
 a:hover {
-    color: var(--blue-3);
+  color: var(--blue-3);
 }
 
 a:active {
   color: var(--black-03);
-
 }
 
 .container {
@@ -201,6 +200,11 @@ a:active {
   text-transform: uppercase;
   text-align: center;
   outline: none;
+  display: inline-block;
+}
+
+.button:hover {
+  color: var(--white);
 }
 
 .button_brown {
