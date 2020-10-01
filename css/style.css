@@ -314,28 +314,28 @@ a:active {
 
 /* FOOTER */
 
-.main-footer {
+.footer {
   background-color: var(--white-09);
 }
 
-.footer-contacts {
+.footer__contacts {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
-.footer-phone {}
+.footer__phone {}
 
-.footer-social {}
+.footer__social {}
 
-.footer-copyright {
+.footer__copyright {
   /*background-color: var(red-1);*/
 }
 
-.footer-copyright:hover {
+.footer__copyright:hover {
   /*background-color: var(--blue-3);*/
 }
-.footer-copyright:active {
+.footer__copyright:active {
   /*background-color: var(--gray-7);*/
 }
 
