@@ -1,126 +1,165 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+<body class="page-body">
+  <div class="container">
+    <header class="main-header">
+    	<nav class="main-navigation">
+        <a class="main-logo" href="index.html">
+          <img src="https://via.placeholder.com/" width="368" height="153" alt="Логотип проект Седона">
+        </a>
+       	<ul class="site-navigation">
+    			<li><a href="">Информация</a></li>
+    			<li><a href="">Фото и видео</a></li>
+    			<li><a href="">Карта штата</a></li>
+    			<li><a class="active" href="hotels.html">Гостиницы</a></li>
+    		</ul>
+    	</nav>
+    </header>
 
-  	<header>
-		<nav>
-			<a href="index.html">
-      			<img src="img/index-logo.svg" width="368" height="153" alt="Логотип проект Седона">
-    		</a>
+  	<main>
+  		<section class="main-filter">
+        <div>
+  			  <h4 class="h4">Инфраструктура:</h4>
+    			<label class="checkbox">Бассейн
+            <input type="checkbox" checked="checked">
+          </label>
+    			<label class="checkbox">Парковка
+            <input type="checkbox">
+          </label>
+    			<label class="checkbox">Wi-Fi
+            <input type="checkbox" disabled>
+          </label>
+        </div>
 
-			<ul>
-				<li><a href="blank.html">Информация</a></li>
-				<li><a href="blank.html">Фото и видео</a></li>
-				<li><a href="blank.html">Карта штата</a></li>
-				<li><a href="hotels.html">Гостиницы</a></li>
-			</ul>
-			<!--<a href="blank.html">Войти</a>-->
+        <div>
+    			<h4 class="h4">Тип жилья:</h4>
+          <label class="checkbox">Гостиницы
+            <input type="checkbox" checked="checked">
+          </label>
+    			<label class="checkbox">Мотель
+            <input type="checkbox" checked="checked">
+          </label>
+    			<label class="checkbox">Апартаменты
+            <input type="checkbox" checked="checked">
+          </label>
+        </div>
 
-		</nav>
-	</header>
+        <div>
+    			<h4 class="h4">Стоимость в сутки (Р):</h4>
+    			<div class="rent-form">
+            <input class="rent-form__input" type="text" value="от 0">
+            <input class="rent-form__input" type="text" value="до 3000">
+          </div>
+          <input class="rent-range" type="range">
+    			<button class="button-white">Показать</button>
+        </div>
+  		</section>
 
-	<main>
-		<section>
-			<h2>Инфраструктура:</h2>
-			<!--Здесь будет фильтр инфраструктура-->
-			<p>Бассейн</p>
-			<p>Парковка</p>
-			<p>Wi-Fi</p>
+  		<section class="sorting">
+  			<h3 class="sorting__found h3">Найдено:3</h3>
+  			<p class="sorting__title">Сортировка:</p>
+  			<a class="sorting__filter sorting__filter_active" href="">По цене</a>
+  			<a class="sorting__filter" href="">По типу</a>
+  			<a class="sorting__filter" href="">По рейтингу</a>
+      </section>
 
-			<h2>Тип жилья:</h2>
-			<!--Здесь будет фильтр тип жилья-->
-			<p>Гостиница</p>
-			<p>Мотель</p>
-			<p>Апартаменты</p>
+      <section class="apartments">
+  			<div class="apartment">
+          <div class="apartment__image">
+            <img src="" width="368" height="153" alt="Amara resort & spa">
+          </div>
+          <div class="apartment__description">
+            <a class="apartment__name h3" href="">Amara resort & spa</a>
+    				<p class="apartment__property">Гостиница</p>
+            <p class="apartment__property">от 4000</p>
+            <div class="apartment__buttons buttons">
+              <button class="button button_blue buttons__item">Подробнее</button>
+    				  <button class="button button_brown buttons__item">Забронировать</button>
+            </div>
+          </div>
+          <div class="apartment__rating">
+            <div class="apartment__stars stars">
+              Звездочки
+            </div>
+            <div class="apartment__score">
+    				  Рейтинг: 8,5
+            </div>
+        </div>
+        </div>
 
-			<h2>Стоимость в сутки (Р):</h2>
-			<!--Здесь будет фильтр стоимость в сутки-->
-			<p>от 0 до 3000</p>
-			<p>Показать</p>
-			<!--Здесь будет кнопка-->
-		</section>
+        <div class="apartment">
+          <div class="apartment__image">
+            <img src="" width="368" height="153" alt="Desert qual inn">
+          </div>
+          <div class="apartment__description">
+            <a class="apartment__name h3" href="">Desert qual inn</a>
+    				<p class="apartment__property">Мотель</p>
+            <p class="apartment__property">от 3000</p>
+            <div class="apartment__buttons buttons">
+              <button class="button button_blue buttons__item">Подробнее</button>
+    				  <button class="button button_brown buttons__item">Забронировать</button>
+            </div>
+          </div>
+          <div class="apartment__rating">
+            <div class="apartment__stars stars">
+              Звездочки
+            </div>
+            <div class="apartment__score">
+    				  Рейтинг: 8,5
+            </div>
+        </div>
+        </div>
 
-		<section>
-			<h2>Найдено:3</h2>
-			<p>Сортировка:</p>
-			<a href="">По цене</a>
-			<a href="">По типу</a>
-			<a href="">По рейтингу</a>
+        <div class="apartment">
+          <div class="apartment__image">
+            <img src="" width="368" height="153" alt="Villas at poco diablo">
+          </div>
+          <div class="apartment__description">
+            <a class="apartment__name h3" href="">Villas at poco diablo</a>
+    				<p class="apartment__property">Апартаменты</p>
+            <p class="apartment__property">от 2000</p>
+            <div class="apartment__buttons buttons">
+              <button class="button button_blue buttons__item">Подробнее</button>
+    				  <button class="button button_brown buttons__item">Забронировать</button>
+            </div>
+          </div>
+          <div class="apartment__rating">
+            <div class="apartment__stars stars">
+              Звездочки
+            </div>
+            <div class="apartment__score">
+    				  Рейтинг: 8,5
+            </div>
+        </div>
+        </div>
+  		</section>
+  	</main>
 
-			<h2>Список найденных апартаментов</h2>
-			<ul>
-				<li>
-					<img src="" width="368" height="153" alt="Amara resort & spa">
-					<h2>Amara resort & spa</h2>
-					<p>Гостиница от 4000</p>
-					<a href="">Подробнее</a>
-					<!--Здесь будет кнопка-->
-					<a href="">Забронировать</a>
-					<!--Здесь будет кнопка-->
-					<p>Рейтинг:8,5</p>
-					<!--Здесь будет блок оценки цвездами-->
-					<!--Сюда будут передаваться значения оцененного рейтинга-->
-				</li>
+    <footer class="main-footer">
+    <section class="footer-contacts">
+      <a href="#">#VISITSEDONA</a>
+      <br>
+      Тел: <a class="footer-phone" href="tel:+74956660166">+7(495)6660166</a>
+    </section>
 
-				<li>
-					<img src="" width="368" height="153" alt="Desert qual inn">
-					<h2>Desert qual inn</h2>
-					<p>Мотель от 3000</p>
-					<a href="">Подробнее</a>
-					<!--Здесь будет кнопка-->
-					<a href="">Забронировать</a>
-					<!--Здесь будет кнопка-->
-					<p>Рейтинг:8,9</p>
-					<!--Здесь будет блок оценки цвездами-->
-					<!--Сюда будут передаваться значения оцененного рейтинга-->
-				</li>
+    <section class="footer-social">
+      <a class="button button_blue" href="#">Твиттер</a>
+      <a class="button button_blue" href="#">Фейсбук</a>
+      <a class="button button_blue" href="#">Ютуб</a>
+    </section>
 
-				<li>
-					<img src="" width="368" height="153" alt="Villas at poco diablo">
-					<h2>Villas at poco diablo</h2>
-					<p>Апартаменты от 2000</p>
-					<a href="">Подробнее</a>
-					<!--Здесь будет кнопка-->
-					<a href="">Забронировать</a>
-					<!--Здесь будет кнопка-->
-					<p>Рейтинг:9,2</p>
-					<!--Здесь будет блок оценки цвездами-->
-					<!--Сюда будут передаваться значения оцененного рейтинга-->
-				</li>
-			</ul>
-		</section>
-
-	</main>
-
-  	<footer>
-		<section>
-			<a>#VISITSEDONA</a>
-			<br>
-			Тел: <a href="tel:+74956660166">+7(495)6660166</a>
-		</section>
-
-		<section>
-			<h2>Давайте дружить!</h2>
-			<ul>
-				<li>
-					<a href="#">Твиттер</a>
-				</li>
-				<li>
-					<a href="#">Фейсбук</a>
-				</li>
-				<li>
-					<a href="#">Ютуб</a>
-				</li>
-			</ul>
-		</section>
-		
-		<p>Разработано:
-			<a href="https://htmlacademy.ru">HTML Academy</a>
-		</p>
-	</footer>
-  </body>
+    <p class="footer-copyright">
+      <a href="https://htmlacademy.ru">
+        <img src="" alt="Логотип Академии">
+      </a>
+    </p>
+  </footer>
+  </div>
+</body>
 </html>
