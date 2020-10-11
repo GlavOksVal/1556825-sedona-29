@@ -3,6 +3,7 @@
   --white: #FFFFFF;
 
   --black-03: rgba(0, 0, 0, 0.3);
+  --white-03: rgba(255, 255, 255, 0.3);
   --white-09: rgba(255, 255, 255, 0.9);
 
   --red-1: #231F20;
@@ -22,14 +23,16 @@
   --gray-3: #6A6A6A;
   --gray-4: #888888;
   --gray-5: #A9A9A9;
-  --gray-6: #B3B3B3; /* Возможно не понадобится */
-  --gray-7: #BDBBBC;
-  --gray-8: #EBEBEB;
-  --gray-9: #F2F2F2;
-  --gray-10: #E5E5E5;
-  --gray-11: #EEEEEE;
+  --gray-6: #ABABAB;
+  --gray-7: #B3B3B3; /* Возможно не понадобится */
+  --gray-8: #BDBBBC;
+  --gray-9: #EBEBEB;
+  --gray-10: #F2F2F2;
+  --gray-11: #E5E5E5;
+  --gray-12: #EEEEEE;
 
-  --shadow: rgba(0, 1, 1, 0.15);
+  --shadow-1: rgba(0, 1, 1, 0.15);
+  --shadow-2: rgba(171, 171, 171, 0.3);
 }
 
 html {
@@ -69,7 +72,7 @@ body {
 	font-style: normal;
   text-transform: uppercase;
   color: var(--black);
-  background-color: var(--gray-9);
+  background-color: var(--gray-10);
 }
 
 img {
@@ -122,6 +125,7 @@ a:active {
   text-align: center;
   outline: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 .button:active .button__icon {
@@ -202,6 +206,7 @@ a:active {
   text-align: center;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button-white:hover {
@@ -364,7 +369,7 @@ a:active {
 }
 
 .advantage_gray {
-  background-color: var(--gray-11);
+  background-color: var(--gray-12);
   padding-left: 71px;
   padding-right: 71px;
   padding-bottom: 54px;
@@ -418,28 +423,28 @@ a:active {
   width: 568px;
   padding: 55px;
   background: var(--white);
-  box-shadow: 0px 7px 15px var(--shadow);
+  box-shadow: 0px 7px 15px var(--shadow-1);
 }
 
 .form-group {}
 
 .field input {
-  background-color: var(--gray-9);
+  background-color: var(--gray-10);
   font-weight: bold;
   line-height: 26px;
   padding: 4px 10px;
   height: 38px;
-  border: 2px solid var(--gray-9);
+  border: 2px solid var(--gray-10);
   text-transform: uppercase;
 }
 .field input:hover {
-  background-color: var(--gray-8);
-  border: 2px solid var(--gray-8);
+  background-color: var(--gray-9);
+  border: 2px solid var(--gray-9);
 }
 
 .field input:focus {
   background-color: var(--white);
-  border: 2px solid var(--gray-10);
+  border: 2px solid var(--gray-11);
   outline: none;
 }
 
@@ -488,7 +493,7 @@ a:active {
   /*background-color: var(--blue-3);*/
 }
 .copyright__link:active {
-  /*background-color: var(--gray-7);*/
+  /*background-color: var(--gray-8);*/
 }
 
 .copyright {
@@ -504,7 +509,7 @@ a:active {
 
 .main-filter {
   color: var(--white);
-  background-color: var(--gray-7); /*пока дали*/
+  background-color: var(--gray-8); /*пока дали*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 27px 72px;
@@ -513,10 +518,99 @@ a:active {
   background-size: cover;
 }
 
-.kot {
-  width: 135px;
-  margin-right: 119px;
-  }
+.housing-options {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.housing-type {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.rent-form {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-field {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  border: 2px solid var(--white);
+  border-radius: 2px;
+}
+
+.range-field::before {
+  height: 22px;
+  width: 2px;
+  background-color: var(--white);
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5px;
+}
+
+.range-field__input {
+  background-color: transparent;
+  color: var(--white);
+  border: 0;
+  text-align: center;
+  text-transform: uppercase;
+  height: 32px;
+  flex-grow: 1;
+}
+
+.range-field__min {
+  display: flex;
+}
+
+.range-field__max {
+  display: flex;
+}
+
+.range-slider {
+  position: relative;
+  padding: 9px 0 8px;
+  margin-top: 11px;
+}
+
+.range-slider__scale {
+  height: 2px;
+  background-color: var(--white-03);
+}
+
+.range-slider__bar {
+  height: 2px;
+  background-color: var(--white);
+}
+
+.range-slider__toggle {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  border: 8px solid var(--white);
+  background-color: var(--gray-6);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--shadow-2);
+  cursor: pointer;
+}
+
+.rent-form__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
 .checkbox {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -528,15 +622,11 @@ a:active {
 
 .checkbox input:disabled {}
 
-.rent-range {}
-
-.rent-range:hover {}
-
 .sorting {
   display: flex;
   align-items: flex-start;
   padding: 30px 73px;
-  border-bottom: 1px solid var(--gray-10);
+  border-bottom: 1px solid var(--gray-11);
 }
 
 .sorting__found {
@@ -579,7 +669,7 @@ a:active {
 .apartment {
   display: flex;
   padding: 23px 73px 30px;
-  border-bottom: 1px solid var(--gray-10);
+  border-bottom: 1px solid var(--gray-11);
 }
 
 .apartment__image {
@@ -638,6 +728,6 @@ a:active {
   line-height: 21px;
   padding: 3px 12px 3px 15px;
   color : var(--gray-2);
-  background-color: var(--gray-9);
+  background-color: var(--gray-10);
   margin-top: 47px;
 }

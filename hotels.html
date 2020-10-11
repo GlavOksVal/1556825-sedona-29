@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body class="page__body">
+
   <div class="container">
     <header class="header">
   		<nav class="header__navigation">
@@ -16,16 +17,17 @@
         <ul class="header__menu menu">
   				<li class="menu__item"><a class="menu__link" href="">Информация</a></li>
   				<li class="menu__item"><a class="menu__link" href="">Фото и видео</a></li>
-  				<li class="menu__item"><a class="menu__link" href="">Карта штата</a></li>
-  				<li class="menu__item"><a class="menu__link menu__link_active" href="hotels.html">Гостиницы</a></li>
+  				<li class="menu__item menu__item_right"><a class="menu__link" href="">Карта штата</a></li>
+  				<li class="menu__item menu__item_right"><a class="menu__link_active" href="hotels.html">Гостиницы</a></li>
   			</ul>
   		</nav>
   	</header>
 
   	<main class="main">
-  		<section class="main-filter">
-        <div class="kot">
-  			  <h4 class="h4">Инфраструктура:</h4>
+  		<form class="main-filter" method="get" action="https://echo.htmlacademy.ru">
+
+        <fieldset class="housing-options">
+  			  <legend class="h4">Инфраструктура:</legend>
     			<label class="checkbox">Бассейн
             <input type="checkbox" checked="checked">
           </label>
@@ -35,10 +37,10 @@
     			<label class="checkbox">Wi-Fi
             <input type="checkbox" disabled>
           </label>
-        </div>
+        </fieldset>
 
-        <div>
-    			<h4 class="h4">Тип жилья:</h4>
+        <fieldset class="housing-type">
+    			<legend class="h4">Тип жилья:</legend>
           <label class="checkbox">Гостиницы
             <input type="checkbox" checked="checked">
           </label>
@@ -48,18 +50,33 @@
     			<label class="checkbox">Апартаменты
             <input type="checkbox" checked="checked">
           </label>
-        </div>
+        </fieldset>
 
-        <div>
-    			<h4 class="h4">Стоимость в сутки (Р):</h4>
-    			<div class="rent-form">
-            <input class="rent-form__input" type="text" value="от 0">
-            <input class="rent-form__input" type="text" value="до 3000">
+        <fieldset class="rent-form">
+    			<legend class="rent-form__title h4">Стоимость в сутки (Р):</legend>
+
+          <div class="range-field">
+            <input class="range-field__input" type="text" name="min-price" value="от 0">
+            <input class="range-field__input" type="text" name="max-price" value="до 3000">
           </div>
-          <input class="rent-range" type="range">
-    			<button class="button-white">Показать</button>
-        </div>
-  		</section>
+
+          <div class="range-slider">
+            <div class="range-slider__scale">
+              <div class="range-slider__bar" style="
+                width: 30%;
+              "></div>
+            </div>
+            <div class="range-slider__toggle range-slider__toggle_min" tabindex="0"></div>
+            <div class="range-slider__toggle range-slider__toggle_max" tabindex="0" style="
+              left: 30%
+            "></div>
+          </div>
+
+          <div class="rent-form__button">
+            <button class="button-white">Показать</button>
+          </div>
+        </fieldset>
+  		</form>
 
   		<section class="sorting">
   			<h3 class="sorting__found h3">Найдено:3</h3>
