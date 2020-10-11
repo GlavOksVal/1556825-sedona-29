@@ -24,7 +24,7 @@
 
   	<main class="main">
   		<section class="main-filter">
-        <div>
+        <div class="kot">
   			  <h4 class="h4">Инфраструктура:</h4>
     			<label class="checkbox">Бассейн
             <input type="checkbox" checked="checked">
@@ -37,7 +37,7 @@
           </label>
         </div>
 
-        <div>
+        <div class="kot">
     			<h4 class="h4">Тип жилья:</h4>
           <label class="checkbox">Гостиницы
             <input type="checkbox" checked="checked">
@@ -72,12 +72,14 @@
       <section class="apartments">
   			<div class="apartment">
           <div class="apartment__image">
-            <img src="img/hotels/amara.jpg" width="135" height="90" alt="Amara resort & spa">
+            <img class="apartment__photo" src="img/hotels/amara.jpg" width="135" height="90" alt="Amara resort & spa">
           </div>
           <div class="apartment__description">
             <a class="apartment__name h3" href="">Amara resort & spa</a>
-    				<p class="apartment__property">Гостиница</p>
-            <p class="apartment__property">от 4000</p>
+            <div class="apartment__properties">
+              <p class="apartment__type">Гостиница</p>
+              <p class="apartment__cost">от 4000</p>
+            </div>
             <div class="apartment__buttons buttons">
               <a class="button button_blue buttons__item" href="">Подробнее</a>
     				  <a class="button button_brown buttons__item" href="">Забронировать</a>
@@ -85,7 +87,6 @@
           </div>
           <div class="apartment__rating">
             <div class="apartment__stars stars">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Stars">
             </div>
             <div class="apartment__score">
     				  Рейтинг: 8,5
@@ -95,12 +96,14 @@
 
         <div class="apartment">
           <div class="apartment__image">
-            <img src="img/hotels/desert.jpg" width="135" height="90" alt="Desert qual inn">
+            <img class="apartment__photo" src="img/hotels/desert.jpg" width="135" height="90" alt="Desert qual inn">
           </div>
           <div class="apartment__description">
             <a class="apartment__name h3" href="">Desert qual inn</a>
-    				<p class="apartment__property">Мотель</p>
-            <p class="apartment__property">от 3000</p>
+            <div class="apartment__properties">
+              <p class="apartment__type">Мотель</p>
+              <p class="apartment__cost">от 3000</p>
+            </div>
             <div class="apartment__buttons buttons">
               <a class="button button_blue buttons__item" href="">Подробнее</a>
     				  <a class="button button_brown buttons__item" href="">Забронировать</a>
@@ -108,7 +111,6 @@
           </div>
           <div class="apartment__rating">
             <div class="apartment__stars stars">
-              <img src="img/icons/star.svg"  width="19" height="17" alt="Stars">
             </div>
             <div class="apartment__score">
     				  Рейтинг: 8,9
@@ -118,12 +120,14 @@
 
         <div class="apartment">
           <div class="apartment__image">
-            <img src="img/hotels/villas.jpg" width="135" height="90" alt="Villas at poco diablo">
+            <img class="apartment__photo" src="img/hotels/villas.jpg" width="135" height="90" alt="Villas at poco diablo">
           </div>
           <div class="apartment__description">
             <a class="apartment__name h3" href="">Villas at poco diablo</a>
-    				<p class="apartment__property">Апартаменты</p>
-            <p class="apartment__property">от 2000</p>
+            <div class="apartment__properties">
+              <p class="apartment__type">Апартаменты</p>
+              <p class="apartment__cost">от 2000</p>
+            </div>
             <div class="apartment__buttons buttons">
               <a class="button button_blue buttons__item" href="">Подробнее</a>
     				  <a class="button button_brown buttons__item" href="">Забронировать</a>
@@ -131,7 +135,6 @@
           </div>
           <div class="apartment__rating">
             <div class="apartment__stars stars">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Stars">
             </div>
             <div class="apartment__score">
     				  Рейтинг: 9,2

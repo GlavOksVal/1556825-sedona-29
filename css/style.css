@@ -507,8 +507,16 @@ a:active {
   background-color: var(--gray-7); /*пока дали*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 27px 72px;
+  background-image: url(../img/hotels/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.kot {
+  width: 135px;
+  margin-right: 119px;
+  }
 .checkbox {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -524,13 +532,24 @@ a:active {
 
 .rent-range:hover {}
 
-.sorting {}
+.sorting {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 73px;
+  border-bottom: 1px solid var(--gray-10);
+}
 
-.sorting__found {}
+.sorting__found {
+  margin: 0;
+  margin: 0;
+  margin-right: 46px;
+}
 
 .sorting__title {
   font-size: 12px;
   line-height: 18px;
+  margin: 0;
+  margin-right: 40px;
 }
 
 .sorting__filter {
@@ -538,6 +557,7 @@ a:active {
   line-height: 18px;
   color: var(--black-03);
   border-bottom: 1px dashed var(--blue-3);
+  margin-right: 32px;
 }
 
 .sorting__filter:hover {
@@ -557,30 +577,60 @@ a:active {
 .apartments {}
 
 .apartment {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  margin: 0 73px;
-  padding: 30px 0;
+  display: flex;
+  padding: 23px 73px 30px;
+  border-bottom: 1px solid var(--gray-10);
 }
 
-.apartment__image {}
+.apartment__image {
+  margin-right: 29px;
+  margin-top: 7px;
+  width: 135px;
+}
 
-.apartment__description {}
+.apartment__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.apartment__description {
+  margin-right: auto;
+}
 
 .apartment__name {}
 
-.apartment__property {
+.apartment__properties {
+  display: flex;
+  margin: 7px 0 15px;
+}
+
+.apartment__type {
+  min-width: 116px;
+  margin: 0;
+}
+
+.apartment__cost {
   line-height: 21px;
   color: var(--gray-1);
+  margin: 0;
 }
 
 .apartment__buttons {}
 
-.buttons__item {}
+.buttons {
+  display: flex;
+}
+
+.buttons__item:not(:last-child) {
+  margin-right: 6px;
+}
 
 .apartment__rating {}
 
-.apartment__stars {}
+.apartment__stars {
+  margin-top: 6px;
+}
 
 .stars {}
 
@@ -589,4 +639,5 @@ a:active {
   padding: 3px 12px 3px 15px;
   color : var(--gray-2);
   background-color: var(--gray-9);
+  margin-top: 47px;
 }
