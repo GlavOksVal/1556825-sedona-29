@@ -215,7 +215,6 @@ a:active {
 }
 
 .container {
-  min-height: 100%;
   width: 1200px;
   margin: 0 auto;
   background-color: var(--white);
@@ -290,6 +289,7 @@ a:active {
 .main {}
 
 .jumbotron {
+  background-color: var(--gray-8);
   background-image: url("../img/jumbotron/triangles.svg"), url("../img/jumbotron/background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, cover;
@@ -426,23 +426,24 @@ a:active {
   box-shadow: 0px 7px 15px var(--shadow-1);
 }
 
-.form-group {
+.field {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.form-group__title {
+.field__title {
   min-width: 112px;
 }
 
-.field {
+.field__container {
   position: relative;
   flex-grow: 1;
+  display: flex;
 }
 
-.field_date::after {
+.field__container_date::after {
   content: "";
   position: absolute;
   height: 23px;
@@ -464,6 +465,7 @@ a:active {
   text-transform: uppercase;
   display: block;
   width: 100%;
+  flex-grow: 1;
 }
 
 .field__input:hover {
@@ -476,6 +478,19 @@ a:active {
   border: 2px solid var(--gray-11);
   outline: none;
 }
+
+.form-group {
+  display: flex;
+}
+
+.form-group > .field:not(:first-child) {
+  padding-left: 53px;
+}
+
+.form-group > .field:not(:first-child) > .field__title {
+  min-width: 65px;
+}
+
 
 
 /* FOOTER */
@@ -538,7 +553,7 @@ a:active {
 
 .main-filter {
   color: var(--white);
-  background-color: var(--gray-8); /*пока дали*/
+  background-color: var(--gray-8);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 27px 72px;
@@ -693,6 +708,33 @@ a:active {
   border-color: transparent;
 }
 
+.sorting__arrows {
+  display: flex;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.sorting__arrow:not(:last-child) {
+  margin-right: 12px;
+}
+
+.icon-arrow {
+  width: 11px;
+  height: 10px;
+}
+
+.icon-arrow:hover path {
+  fill: var(--black);
+}
+
+.icon-arrow:active path {
+  fill: var(--blue-3);
+}
+
+.icon-arrow__svg {
+  display: block;
+}
+
 .apartments {}
 
 .apartment {
@@ -751,7 +793,22 @@ a:active {
   margin-top: 6px;
 }
 
-.stars {}
+.stars {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.star {
+  width: 19px;
+  height: 17px;
+  background-image: url("../img/icons/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.star:not(:last-child) {
+  margin-right: 4px;
+}
 
 .apartment__score {
   line-height: 21px;
