@@ -412,6 +412,7 @@ a:active {
 
 .map {
   position: relative;
+  margin-bottom: -120px;
 }
 
 .map__iframe {
@@ -447,16 +448,24 @@ a:active {
   display: flex;
 }
 
-.field__container_date::after {
-  content: "";
+.field__button {
   position: absolute;
-  height: 23px;
-  width: 21px;
+  height: 24px;
+  width: 22px;
   top: 7px;
   right: 9px;
-  background-image: url("../img/icons/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.field__button:hover path {
+  fill: var(--black);
+}
+
+.field__button:active path {
+  fill: var(--blue-3);
 }
 
 .field__input {
@@ -506,6 +515,7 @@ a:active {
   justify-items: center;
   align-items: center;
   padding: 36px 72px;
+  z-index: 2;
 }
 
 .footer__contacts {
