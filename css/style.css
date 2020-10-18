@@ -345,6 +345,10 @@ a:active {
   padding: 47px 49px 82px;
 }
 
+.advantage__icon {
+  margin: 12px 0 28px;
+}
+
 .advantage__title {
   line-height: 21px;
   width: 150px;
@@ -578,6 +582,7 @@ a:active {
   margin: 0;
   padding: 0;
   border: none;
+  width: 317px;
 }
 
 .range-field {
@@ -658,8 +663,19 @@ a:active {
 .checkbox {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  position: relative;
+  margin-top: 25px;
+  margin-left: 40px;
 }
-
+.checkbox:checked+label::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/icons/checkbox-on.svg);
+  background-repeat: no-repeat;
+  left: -40px;
+}
 .checkbox input {}
 
 .checkbox input:hover {}

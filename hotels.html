@@ -25,31 +25,29 @@
 
   	<main class="main">
   		<form class="main-filter" method="get" action="https://echo.htmlacademy.ru">
-
         <fieldset class="housing-options">
   			  <legend class="h4">Инфраструктура:</legend>
-    			<label class="checkbox">Бассейн
-            <input type="checkbox" checked="checked">
-          </label>
-    			<label class="checkbox">Парковка
-            <input type="checkbox">
-          </label>
-    			<label class="checkbox">Wi-Fi
-            <input type="checkbox" disabled>
-          </label>
+            <input class="visually-hidden" type="checkbox" checked="checked">
+            <label class="checkbox">Бассейн</label>
+
+            <input class="visually-hidden" type="checkbox">
+            <label class="checkbox">Парковка</label>
+
+            <input class="visually-hidden" type="checkbox" disabled>
+            <label class="checkbox">Wi-Fi</label>
         </fieldset>
 
         <fieldset class="housing-type">
     			<legend class="h4">Тип жилья:</legend>
-          <label class="checkbox">Гостиницы
-            <input type="checkbox" checked="checked">
-          </label>
-    			<label class="checkbox">Мотель
-            <input type="checkbox" checked="checked">
-          </label>
-    			<label class="checkbox">Апартаменты
-            <input type="checkbox" checked="checked">
-          </label>
+
+            <input class="visually-hidden" type="checkbox" checked="checked">
+            <label class="checkbox">Гостиницы</label>
+
+            <input class="visually-hidden" type="checkbox" checked="checked">
+            <label class="checkbox">Мотель</label>
+
+            <input class="visually-hidden" type="checkbox" checked="checked">
+            <label class="checkbox">Апартаменты</label>
         </fieldset>
 
         <fieldset class="rent-form">
@@ -89,7 +87,7 @@
             <svg class="icon-arrow__svg" width="11" height="10" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA" />
             </svg>
-            <span class="visually-hidden ">
+            <span class="visually-hidden">
               Сортировка по возрастанию
             </span>
           </a>
