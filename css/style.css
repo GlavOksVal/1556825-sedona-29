@@ -710,8 +710,12 @@ a:active {
   background-image: url(../img/icons/checkbox-on.svg);
 }
 
-.checkbox__input:disabled + .checkbox__label::before {
-  opacity: ;
+.checkbox__input[disabled] + .checkbox__label::before {
+  background-image: url(../img/icons/checkbox-off-disabled.svg);
+}
+
+.checkbox__input[disabled]:checked + .checkbox__label::before {
+  background-image: url(../img/icons/checkbox-on-disabled.svg);
 }
 
 .sorting {
