@@ -27,27 +27,36 @@
   		<form class="main-filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="housing-options">
   			  <legend class="h4">Инфраструктура:</legend>
-            <input class="visually-hidden" type="checkbox" checked="checked">
-            <label class="checkbox">Бассейн</label>
+          <div class="checkbox">
+            <input class="visually-hidden checkbox__input" id="swimming-pool" type="checkbox" checked="checked">
+            <label class="checkbox__label" for="swimming-pool">Бассейн</label>
+          </div>
 
-            <input class="visually-hidden" type="checkbox">
-            <label class="checkbox">Парковка</label>
+          <div class="checkbox">
+            <input class="visually-hidden checkbox__input" id="parking" type="checkbox">
+            <label class="checkbox__label" for="parking">Парковка</label>
+          </div>
 
-            <input class="visually-hidden" type="checkbox" disabled>
-            <label class="checkbox">Wi-Fi</label>
+          <div class="checkbox">
+            <input class="visually-hidden checkbox__input" id="wi-fi" type="checkbox" disabled>
+            <label class="checkbox__label" for="wi-fi">Wi-Fi</label>
+          </div>
         </fieldset>
 
         <fieldset class="housing-type">
     			<legend class="h4">Тип жилья:</legend>
-
-            <input class="visually-hidden" type="checkbox" checked="checked">
-            <label class="checkbox">Гостиницы</label>
-
-            <input class="visually-hidden" type="checkbox" checked="checked">
-            <label class="checkbox">Мотель</label>
-
-            <input class="visually-hidden" type="checkbox" checked="checked">
-            <label class="checkbox">Апартаменты</label>
+          <div class="checkbox">
+            <input class="visually-hidden checkbox__input" id="hotel" type="checkbox" checked="checked">
+            <label class="checkbox__label" for="hotel">Гостиницы</label>
+          </div>
+          <div class="checkbox">
+            <input class="visually-hidden checkbox__input" id="motel" type="checkbox" checked="checked">
+            <label class="checkbox__label" for="motel">Мотель</label>
+          </div>
+          <div class="checkbox">
+            <input class="visually-hidden checkbox__input" id="apartments" type="checkbox" checked="checked">
+            <label class="checkbox__label" for="apartments">Апартаменты</label>
+          </div>
         </fieldset>
 
         <fieldset class="rent-form">

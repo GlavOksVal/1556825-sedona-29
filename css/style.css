@@ -577,9 +577,8 @@ a:active {
 .main-filter {
   color: var(--white);
   background-color: var(--gray-8);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 27px 72px;
+  display: flex;
+  padding: 27px 72px 32px;
   background-image: url(../img/hotels/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -589,6 +588,7 @@ a:active {
   margin: 0;
   padding: 0;
   border: none;
+  margin-right: 119px;
 }
 
 .housing-type {
@@ -602,6 +602,7 @@ a:active {
   padding: 0;
   border: none;
   width: 317px;
+  margin-left: auto;
 }
 
 .range-field {
@@ -680,26 +681,38 @@ a:active {
 }
 
 .checkbox {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  position: relative;
-  margin-top: 25px;
-  margin-left: 40px;
+  margin-top: 24px;
+
 }
-.checkbox:checked+label::before {
+
+.checkbox__label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 39px;
+  line-height: 21px;
+  padding-bottom: 1px;
+}
+
+.checkbox__input + .checkbox__label::before {
   content: "";
   position: absolute;
   width: 27px;
   height: 23px;
-  background-image: url(../img/icons/checkbox-on.svg);
+  background-image: url(../img/icons/checkbox-off.svg);
   background-repeat: no-repeat;
-  left: -40px;
+  background-position: 0 0;
+  left: 0px;
 }
-.checkbox input {}
 
-.checkbox input:hover {}
+.checkbox__input:checked + .checkbox__label::before {
+  background-image: url(../img/icons/checkbox-on.svg);
+}
 
-.checkbox input:disabled {}
+.checkbox__input:disabled + .checkbox__label::before {
+  opacity: ;
+}
 
 .sorting {
   display: flex;
