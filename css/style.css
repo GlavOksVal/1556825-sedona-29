@@ -185,14 +185,18 @@ a:active {
   text-align: center;
   height: 38px;
   border: 0;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
 }
 
-.button-number:hover {
-  color: var(--black);
+.button-number:hover path {
+  fill: var(--black);
 }
 
-.button-number:active {
-  color: var(--blue-3);
+.button-number:active path {
+  fill: var(--blue-3);
 }
 
 .button-white {
