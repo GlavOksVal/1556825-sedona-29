@@ -126,6 +126,7 @@ a:active {
   outline: none;
   display: inline-block;
   cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
 }
 
 .button:active .button__icon {
@@ -211,6 +212,7 @@ a:active {
   outline: none;
   background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
 }
 
 .button-white:hover {
@@ -672,7 +674,13 @@ a:active {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--shadow-2);
   cursor: pointer;
+  transition: transform 0.15s;
 }
+
+.range-slider__toggle:hover {
+  transform: scale(1.2);
+}
+
 
 .rent-form__button {
   display: flex;
@@ -773,6 +781,10 @@ a:active {
 .icon-arrow {
   width: 11px;
   height: 10px;
+}
+
+.icon-arrow path {
+  transition: fill 0.15s;
 }
 
 .icon-arrow:hover path {
