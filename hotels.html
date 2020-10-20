@@ -28,17 +28,17 @@
         <fieldset class="housing-options">
   			  <legend class="h4">Инфраструктура:</legend>
           <div class="checkbox">
-            <input class="visually-hidden checkbox__input" id="swimming-pool" type="checkbox" checked="checked">
+            <input class="visually-hidden checkbox__input" id="swimming-pool" name="swimming-pool" type="checkbox" checked="checked">
             <label class="checkbox__label" for="swimming-pool">Бассейн</label>
           </div>
 
           <div class="checkbox">
-            <input class="visually-hidden checkbox__input" id="parking" type="checkbox">
+            <input class="visually-hidden checkbox__input" id="parking" name="parking" type="checkbox">
             <label class="checkbox__label" for="parking">Парковка</label>
           </div>
 
           <div class="checkbox">
-            <input class="visually-hidden checkbox__input" id="wi-fi" type="checkbox" disabled>
+            <input class="visually-hidden checkbox__input" id="wi-fi" name="wi-fi" type="checkbox" disabled>
             <label class="checkbox__label" for="wi-fi">Wi-Fi</label>
           </div>
         </fieldset>
@@ -46,15 +46,15 @@
         <fieldset class="housing-type">
     			<legend class="h4">Тип жилья:</legend>
           <div class="checkbox">
-            <input class="visually-hidden checkbox__input" id="hotel" type="checkbox" checked="checked">
+            <input class="visually-hidden checkbox__input" id="hotel" name="hotel" type="checkbox" checked="checked">
             <label class="checkbox__label" for="hotel">Гостиницы</label>
           </div>
           <div class="checkbox">
-            <input class="visually-hidden checkbox__input" id="motel" type="checkbox" checked="checked">
+            <input class="visually-hidden checkbox__input" id="motel" name="motel" type="checkbox" checked="checked">
             <label class="checkbox__label" for="motel">Мотель</label>
           </div>
           <div class="checkbox">
-            <input class="visually-hidden checkbox__input" id="apartments" type="checkbox" checked="checked" disabled>
+            <input class="visually-hidden checkbox__input" id="apartments" name="apartments" type="checkbox" checked="checked" disabled>
             <label class="checkbox__label" for="apartments">Апартаменты</label>
           </div>
         </fieldset>
@@ -80,7 +80,7 @@
           </div>
 
           <div class="rent-form__button">
-            <button class="button-white">Показать</button>
+            <button class="button-white" type="submit">Показать</button>
           </div>
         </fieldset>
   		</form>
