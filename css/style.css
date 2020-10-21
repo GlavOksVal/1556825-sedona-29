@@ -29,6 +29,7 @@
 
   --shadow-1: rgba(0, 1, 1, 0.15);
   --shadow-2: rgba(171, 171, 171, 0.3);
+  --shadow-3: rgba(0, 0, 0, 0.25);
 }
 
 html {
@@ -199,7 +200,7 @@ a:active {
 .button-white {
   font-size: 14px;
   line-height: 21px;
-  padding: 3px 35px;
+  padding: 5px 35px;
   text-transform: uppercase;
   color: var(--white);
   border: 2px solid var(--white);
@@ -292,6 +293,7 @@ a:active {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  box-shadow: 0px 2px 14px -3px var(--shadow-3);
 }
 
 .visually-hidden {
@@ -328,7 +330,7 @@ a:active {
 
 .menu__item {
   list-style: none;
-  padding: 0 72px;
+  padding: 0 73px;
 }
 
 .menu__item_right {
@@ -407,6 +409,15 @@ a:active {
   margin: 12px 0 28px;
 }
 
+.advantage__icon_home {
+  margin-bottom: 26px;
+}
+
+.advantage__icon_souvenir {
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
 .advantage__title {
   line-height: 21px;
   width: 150px;
@@ -416,7 +427,7 @@ a:active {
 .advantage__description {
   line-height: 21px;
   color: var(--gray-1);
-  margin: 23px 0 0;
+  margin: 25px 0 0;
 }
 
 .advantage_blue {
@@ -424,6 +435,7 @@ a:active {
   background-color: var(--blue-3);
   margin: 0;
   padding-bottom: 51px;
+  padding-top: 49px;
 }
 
 .advantage_blue .advantage__description {
@@ -477,7 +489,7 @@ a:active {
 
 .map__iframe {
   width: 100%;
-  height: 594px;
+  height: 591px;
 }
 
 .booking-widget {
@@ -503,6 +515,10 @@ a:active {
   flex-shrink: 0;
 }
 
+.booking-widget_button {
+  margin-top: 24px;
+}
+
 .form-group {
   display: flex;
 }
@@ -524,7 +540,7 @@ a:active {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  padding: 36px 72px;
+  padding: 36px 55px;
   z-index: 2;
 }
 
@@ -603,7 +619,7 @@ a:active {
 .range-field {
   position: relative;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 11px;
   display: flex;
   border: 2px solid var(--white);
   border-radius: 2px;
@@ -677,7 +693,7 @@ a:active {
 .rent-form__button {
   display: flex;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 26px;
 }
 
 .checkbox {
@@ -782,7 +798,8 @@ a:active {
   fill: var(--black);
 }
 
-.icon-arrow:active path {
+.icon-arrow:active path,
+.icon-arrow_active path {
   fill: var(--blue-3);
 }
 
@@ -833,7 +850,7 @@ a:active {
 }
 
 .buttons__item:not(:last-child) {
-  margin-right: 6px;
+  margin-right: 9px;
 }
 
 .apartment__stars {
