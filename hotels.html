@@ -63,8 +63,11 @@
     			<legend class="rent-form__title h4">Стоимость в сутки (Р):</legend>
 
           <div class="range-field">
-            <input class="range-field__input" type="text" name="min-price" value="от 0">
-            <input class="range-field__input" type="text" name="max-price" value="до 3000">
+            <label for="from"></label>
+            <input class="range-field__input" type="text" id="from" name="min-price" value="от 0">
+
+            <label for="to"></label>
+            <input class="range-field__input" type="text" id="to" name="max-price" value="до 3000">
           </div>
 
           <div class="range-slider">
@@ -73,8 +76,8 @@
                 width: 82%;
               "></div>
             </div>
-            <div class="range-slider__toggle range-slider__toggle_min" tabindex="0"></div>
-            <div class="range-slider__toggle range-slider__toggle_max" tabindex="0" style="
+            <div class="range-slider__toggle range-slider__toggle_min" aria-labeledby="от" tabindex="0"></div>
+            <div class="range-slider__toggle range-slider__toggle_max" aria-labeledby="до" tabindex="0" style="
               left: 79%
             "></div>
           </div>
@@ -215,7 +218,7 @@
         </a>
       </section>
 
-      <div class="footer__copyright copyright" href="https://htmlacademy.ru">
+      <div class="footer__copyright copyright">
         <p class="copyright__text">Website by</p>
         <a class="copyright__link" href="https://htmlacademy.ru">
           <img class="copyright__logo" src="img/logo/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
