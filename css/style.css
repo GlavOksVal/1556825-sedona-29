@@ -124,7 +124,7 @@ a:active {
   display: inline-block;
   cursor: pointer;
   transition: background-color 0.15s, color 0.15s;
-  vertical-align: bottom;
+  vertical-align: baseline;
 }
 
 .button:active .button__icon {
@@ -709,7 +709,7 @@ a:active {
   padding-left: 39px;
   line-height: 21px;
   padding-bottom: 1px;
-  vertical-align: bottom;
+  vertical-align: baseline;
 }
 
 .checkbox__input + .checkbox__label::before {

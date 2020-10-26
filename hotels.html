@@ -15,8 +15,8 @@
           <img class="logo__img" src="img/logo/logo.svg" width="138" height="70" alt="Логотип проект Седона">
         </a>
         <ul class="header__menu menu">
-  				<li class="menu__item "><a class="menu__link" href="">Информация</a></li>
-  				<li class="menu__item "><a class="menu__link" href="">Фото и видео</a></li>
+  				<li class="menu__item"><a class="menu__link" href="">Информация</a></li>
+  				<li class="menu__item"><a class="menu__link" href="">Фото и видео</a></li>
   				<li class="menu__item menu__item_right"><a class="menu__link" href="">Карта штата</a></li>
   				<li class="menu__item menu__item_right"><a class="menu__link menu__link_active" href="hotels.html">Гостиницы</a></li>
   			</ul>
@@ -25,6 +25,7 @@
 
   	<main class="main">
   		<form class="main-filter" method="get" action="https://echo.htmlacademy.ru">
+        <h1 class="visually-hidden">Фильтр по гостиницам</h1>
         <fieldset class="housing-options">
   			  <legend class="h4">Инфраструктура:</legend>
           <div class="checkbox">
@@ -64,10 +65,10 @@
 
           <div class="range-field">
             <label for="from"></label>
-            <input class="range-field__input" type="text" id="from" name="min-price" value="от 0">
+            <input class="range-field__input" type="text" id="from" name="min-price" value="от 0" pattern="[0-9]{1,7}">
 
             <label for="to"></label>
-            <input class="range-field__input" type="text" id="to" name="max-price" value="до 3000">
+            <input class="range-field__input" type="text" id="to" name="max-price" value="до 3000" pattern="[0-9]{1,7}">
           </div>
 
           <div class="range-slider">
@@ -76,8 +77,8 @@
                 width: 82%;
               "></div>
             </div>
-            <div class="range-slider__toggle range-slider__toggle_min" aria-labeledby="от" tabindex="0"></div>
-            <div class="range-slider__toggle range-slider__toggle_max" aria-labeledby="до" tabindex="0" style="
+            <div class="range-slider__toggle range-slider__toggle_min" aria-label="от" tabindex="0"></div>
+            <div class="range-slider__toggle range-slider__toggle_max" aria-label="до" tabindex="0" style="
               left: 79%
             "></div>
           </div>
@@ -89,6 +90,7 @@
   		</form>
 
   		<section class="sorting">
+        <h2 class="visually-hidden">Сортировка по гостиницам</h2>
   			<h3 class="sorting__found h3">Найдено: 3</h3>
   			<p class="sorting__title">Сортировка:</p>
   			<a class="sorting__filter sorting__filter_active" href="">По цене</a>
@@ -115,6 +117,7 @@
       </section>
 
       <section class="apartments">
+        <h2 class="visually-hidden">Найденные гостиницы</h2>
   			<div class="apartment">
           <div class="apartment__image">
             <img class="apartment__photo" src="img/hotels/amara.jpg" width="135" height="90" alt="Amara resort & spa">
@@ -200,6 +203,7 @@
 
     <footer class="footer">
       <section class="footer__contacts">
+        <h2 class="visually-hidden">Контакты</h2>
         <a class="footer__hashtag" href="#">#VISITSEDONA</a>
         <div class="footer__phone">
           Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a>
@@ -207,6 +211,7 @@
       </section>
 
       <section class="footer__social social">
+        <h2 class="visually-hidden">Мы есть в социальных сетях сетях</h2>
         <a class="social__link button button_blue" href="#">
           <img class="button__icon" src="img/icons/twitter.svg" width="17" height="17" alt="Twitter">
         </a>
@@ -219,6 +224,7 @@
       </section>
 
       <div class="footer__copyright copyright">
+        <h2 class="visually-hidden">Наш сайт</h2>
         <p class="copyright__text">Website by</p>
         <a class="copyright__link" href="https://htmlacademy.ru">
           <img class="copyright__logo" src="img/logo/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
