@@ -64,11 +64,15 @@
     			<legend class="rent-form__title h4">Стоимость в сутки (Р):</legend>
 
           <div class="range-field">
-            <label for="from"></label>
-            <input class="range-field__input" type="text" id="from" name="min-price" value="от 0" pattern="[0-9]{1,7}">
+            <label class="range-field__label" for="from">
+              <span class="range-field__text">от&nbsp;</span>
+              <input class="range-field__input" type="text" id="from" value="0" name="min-price" pattern="[0-9]{1,7}">
+            </label>
 
-            <label for="to"></label>
-            <input class="range-field__input" type="text" id="to" name="max-price" value="до 3000" pattern="[0-9]{1,7}">
+            <label class="range-field__label" for="to">
+              <span class="range-field__text range-field__text_right">до&nbsp;</span>
+              <input class="range-field__input" type="text" id="to" value="3000" name="max-price" pattern="[0-9]{1,7}">
+            </label>
           </div>
 
           <div class="range-slider">
